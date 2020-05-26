@@ -4,6 +4,8 @@ const utils = require('@iobroker/adapter-core');
 const { spawn, exec } = require('child_process');
 
 
+var adapter = utils.adapter('lgthinq'); // - mandatory
+
 adapter.on('ready', function()
 {
 	adapter.log.debug('Starting');
